@@ -13,8 +13,9 @@ function clearMem() {
 
 function writeNum(num) {
   if (num === "." && visor.innerHTML.toString().includes(".")) {
-    console.log("ya hay un punto");
-  } else if (visor.innerHTML === "0") {
+    return;
+  }
+  if (visor.innerHTML === "0") {
     visor.innerHTML = num;
   } else {
     visor.innerHTML += num;
@@ -33,6 +34,13 @@ function writeRes(res) {
   clearMem();
   clearScreen();
   writeNum(res);
+}
+
+function increment(num) {
+  if (typeof num !== "number") {
+    throw Error("not a number");
+  }
+  return num + 1;
 }
 
 function calc() {
@@ -62,7 +70,6 @@ function calc() {
             break;
         }
       } else {
-        console.log(mem);
         switch (mem[1 + aux * 2]) {
           case "+":
             r += mem[2 + aux * 2];
@@ -82,7 +89,7 @@ function calc() {
             break;
         }
       }
-      aux++;
+      aux = increment(aux);
     } while (aux < mem.length / 3);
 
     writeRes(r);
