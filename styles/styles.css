@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+* html, * body {
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  width: 100vw;
+  height: 10vh;
+  background-color: #293241;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  text-align: center;
+  color: #f0f0f0;
+}
+.header__title--highlight {
+  font-style: normal;
+  color: #060;
+}
+
+/*# sourceMappingURL=styles.css.map */

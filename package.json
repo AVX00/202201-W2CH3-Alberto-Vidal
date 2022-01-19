@@ -17,7 +17,7 @@
     "start": "sass styles/sass/style.css styles/styles.css",
     "prepare": "husky install",
     "jest": "jest --watchAll",
-    "style-dev": "sass --watch styles/sass/style.css styles/styles.css",
+    "style-dev": "sass --watch styles/sass/style.sass styles/styles.css",
     "test": "echo 'holi'"
   },
   "dependencies": {
