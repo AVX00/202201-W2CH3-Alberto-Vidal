@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculadora</title>
+  </head>
+  <body>
+    <div id="calculadora">
+      <div id="visor">
+        <p id="screen">0</p>
+      </div>
+      <div id="ac" class="numeros" onclick="clearMem();clearScreen()"><p>AC</p></div>
+      <div class="numeros" onclick="clearScreen()"><p>C</p></div>
+      <div class="ops" onclick="writeSym('/')"><p>÷</p></div>
+      <div class="numeros" onclick="writeNum(7)"><p>7</p></div>
+      <div class="numeros" onclick="writeNum(8)"><p>8</p></div>
+      <div class="numeros" onclick="writeNum(9)"><p>9</p></div>
+      <div class="ops" onclick="writeSym('*')"><p>x</p></div>
+      <div class="numeros" onclick="writeNum(4)"><p>4</p></div>
+      <div class="numeros" onclick="writeNum(5)"><p>5</p></div>
+      <div class="numeros" onclick="writeNum(6)"><p>6</p></div>
+      <div class="ops" onclick="writeSym('-')"><p>-</p></div>
+      <div class="numeros" onclick="writeNum(1)"><p>1</p></div>
+      <div class="numeros" onclick="writeNum(2)"><p>2</p></div>
+      <div class="numeros" onclick="writeNum(3)"><p>3</p></div>
+      <div class="ops" onclick="writeSym('+')"><p>+</p></div>
+      <div id="cero" class="numeros" onclick="writeNum(0)"><p>0</p></div>
+      <div id="period" class="numeros" onclick="writeNum('.')"><p>.</p></div>
+
+      <div class="ops" onclick="calc()"><p>=</p></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

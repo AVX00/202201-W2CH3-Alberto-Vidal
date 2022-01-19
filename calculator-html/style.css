@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 23px;
+}
+
+body {
+    background-color: rgb(139, 139, 139);
+}
+
+#calculadora {
+    position: absolute;
+    height: 80%;
+    width: 25%;
+    min-width: 400px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1.3fr repeat(5,1fr);
+    box-shadow: black 1px 1px 4px;
+}
+
+div {
+    border: black 1px solid;
+    text-align: center; 
+    display: table;
+    
+}
+#visor {
+ text-align: right;
+ padding-right: .5em;   
+}
+#screen {
+    color: ivory;
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 58px;
+    
+}
+
+p {
+    vertical-align: middle;
+    display: table-cell;
+}
+
+.numeros {
+    background-color: beige;
+    transition: .2s;
+}
+.numeros:hover {
+    transition: .2s;
+    background-color: rgb(202, 202, 184);
+}
+
+.ops {
+    background-color: orange;
+    font-size: 30px;
+    font-weight: bolder;
+    transition: .2s;
+}
+
+.ops:hover {
+    transition: .2s;
+    background-color: rgb(214, 140, 2);
+}
+
+#visor {
+    grid-row: 1 / 2;
+    grid-column: 1 / 5;
+    background-color: rgb(39, 36, 39);
+}
+
+#cero {
+    grid-row: 6/7;
+    grid-column: 1/3;
+}
+
+#ac {
+    grid-row: 2/3;
+    grid-column: 1/3;
+}
+
+#period {
+    font-weight: bolder;
+}
