@@ -96,3 +96,94 @@ function calc() {
     clearMem();
   }
 }
+
+const ac = document.getElementById("ac");
+ac.onclick(() => {
+  clearMem();
+  clearScreen();
+});
+
+const c = document.getElementById("c");
+c.onclick(() => {
+  clearScreen();
+});
+
+const fraction = document.getElementById("fraction");
+fraction.onclick(() => {
+  writeSym("/");
+});
+
+const product = document.getElementById("product");
+product.onclick(() => {
+  writeSym("*");
+});
+
+const add = document.getElementById("add");
+add.onclick(() => {
+  writeSym("+");
+});
+
+const minus = document.getElementById("minus");
+minus.onclick(() => {
+  writeSym("-");
+});
+
+const one = document.getElementById("one");
+one.onclick(() => {
+  writeNum(1);
+});
+
+const two = document.getElementById("two");
+two.onclick(() => {
+  writeNum(2);
+});
+
+const three = document.getElementById("three");
+three.onclick(() => {
+  writeNum(3);
+});
+
+const four = document.getElementById("four");
+four.onclick(() => {
+  writeNum(4);
+});
+
+const five = document.getElementById("five");
+five.onclick(() => {
+  writeNum(5);
+});
+
+const six = document.getElementById("six");
+six.onclick(() => {
+  writeNum(6);
+});
+
+const seven = document.getElementById("seven");
+seven.onclick(() => {
+  writeNum(7);
+});
+
+const eight = document.getElementById("eight");
+eight.onclick(() => {
+  writeNum(8);
+});
+
+const nine = document.getElementById("nine");
+nine.onclick(() => {
+  writeNum(9);
+});
+
+const cero = document.getElementById("cero");
+cero.onclick(() => {
+  writeNum(0);
+});
+
+const period = document.getElementById("period");
+period.onclick(() => {
+  writeNum(".");
+});
+
+const equal = document.getElementById("equal");
+equal.onclick(() => {
+  calc();
+});
