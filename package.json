@@ -11,12 +11,14 @@
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-plugin-import": "^2.25.4",
     "husky": "^7.0.0",
-    "jest": "^27.4.7"
+    "jest": "^27.4.7",
+    "sass": "^1.49.0"
   },
   "scripts": {
     "test": "echo 'cambia esto luego jefe'",
     "prepare": "husky install",
-    "start": "jest --watchAll"
+    "start": "jest --watchAll",
+    "style-dev": "sass --watch styles/sass/style.css styles/styles.css"
   },
   "dependencies": {}
 }
