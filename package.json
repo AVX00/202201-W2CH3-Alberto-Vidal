@@ -14,7 +14,7 @@
     "jest": "^27.4.7"
   },
   "scripts": {
-    "start": "sass styles/sass/style.css styles/styles.css",
+    "compile": "sass styles/sass/style.css styles/styles.css",
     "prepare": "husky install",
     "jest": "jest --watchAll",
     "style-dev": "sass --watch styles/sass/style.sass styles/styles.css",
