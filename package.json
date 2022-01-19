@@ -21,6 +21,7 @@
     "test": "echo 'holi'"
   },
   "dependencies": {
+    "eslint-config-prettier": "^8.3.0",
     "sass": "^1.49.0"
   }
 }
