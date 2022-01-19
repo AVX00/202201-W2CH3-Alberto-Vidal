@@ -1,0 +1,57 @@
+@use "colors"
+@use "fonts"
+  
+@mixin flex-center()
+  display: flex
+  justify-content: center
+  align-items: center
+  
+
+* 
+  box-sizing: border-box
+  html, body
+    margin: 0
+    padding: 0
+    width: 100vw
+    min-height: 100vh
+  
+  
+.header 
+  width: 100vw
+  height: 10vh
+  background-color: colors.$primary
+  @include flex-center()
+  &__title
+    text-align: center
+    color: colors.$ligt
+    &--highlight
+      font-style: normal
+      color: colors.$alert
+
+.main
+  min-height: 100vh
+  background-color: colors.$secondary
+  @include flex-center()
+  .container
+    @include flex-center()
+    background-color: colors.$emphasize
+    min-height: 30vh
+    min-width: 50vw
+    border-radius: 14px
+    box-shadow: 1px 1px 4px 1px colors.$dark
+    &__navigation
+      @include flex-center()
+      flex-direction: column
+      .navigation--item
+        margin: .8rem
+        text-decoration: none
+        padding: 1rem
+        border-radius: 7px
+        color: colors.$dark
+        font-size: 20px
+        transition: all .6s ease
+      .navigation--item:hover
+        color: colors.$highlight
+        background-color: colors.$alert
+
+

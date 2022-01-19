@@ -1,0 +1,69 @@
+* {
+  font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+* html, * body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100vw;
+  height: 10vh;
+  background-color: #293241;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header__title {
+  text-align: center;
+  color: #f0f0f0;
+}
+.header__title--highlight {
+  font-style: normal;
+  color: #ee6c4d;
+}
+
+.main {
+  min-height: 100vh;
+  background-color: #3d5a80;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #98c1d9;
+  min-height: 30vh;
+  min-width: 50vw;
+  border-radius: 14px;
+  box-shadow: 1px 1px 4px 1px #0f0f0f;
+}
+.main .container__navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.main .container__navigation .navigation--item {
+  margin: 0.8rem;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 7px;
+  color: #0f0f0f;
+  font-size: 20px;
+  transition: all 0.6s ease;
+}
+.main .container__navigation .navigation--item:hover {
+  color: #e0fbfc;
+  background-color: #ee6c4d;
+}
+
+/*# sourceMappingURL=styles.css.map */
